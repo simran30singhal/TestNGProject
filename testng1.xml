@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyAppSuite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="package1.HomePageTest"/>
+      <class name="package1.AnnotationExample">
+      
+      <methods>
+      	
+      	<include name="test1"/>
+      	<!-- <exclude name="test1"/> -->
+      	<!-- <exclude name="test.*"/> 
+      	#All test cases starting with name test will get excluded
+      	-->
+      </methods>
+      
+      </class>
+      <class name="package2.CheckoutTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
